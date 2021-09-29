@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Barlow', sans-serif;
+    background-color: #252836;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1086px;
+}
+
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.header-text h1 {
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.header-text p {
+    font-size: 16px;
+    color: #E0E6E9;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-lupa {
+    right: 200px;
+    color: white;
+
+    z-index: 99;
+}
+
+.search-food {
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #2D303E;
+    border: 1px solid #393C49;
+}
+
+.for-food {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin-right: 30px;
+    margin-bottom: 14px;
+    position: relative;
+
+}
+
+.main-nav {
+    margin-top: 24px;
+    border-bottom: 1px solid #393C49;
+    padding-bottom: 14px;
+}
+
+.main-nav a.active {
+    color: #EA7C69;
+}
+
+.active::before {
+    content: '';
+    display: inline-block;
+    width: 37px;
+    height: 3px;
+    background-color: #EA7C69;
+    border-radius: 15px;
+    position: absolute;
+    top: 30px;
+}
+
+.first-food {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-food h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.select {
+    background-color: #1F1D2B;
+    appearance: none;
+
+    padding: 15px 85px 15px 30px;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.dine {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    appearance: none;
+    outline: none;
+}
+
+.icon-arrow-bot {
+    color: white;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.card .photo {
+    border-radius: 50%;
+    width: 132px;
+    height: 132px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+}
+
+.card {
+    position: relative;
+    background: #1F1D2B;
+    width: 200px;
+    border-radius: 16px;
+    margin-bottom: 70px;
+    padding: 15px 15px 70px 15px;
+    text-align: center;
+}
+
+.food-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin-top: 100px;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.remnant {
+    color: #ABBBC2;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.but {
+    background: rgba(234, 124, 105, 0.24);
+    color: #EA7C69;
+    border: none;
+    border-radius: 0px 0px 16px 16px;
+    width: 200px;
+    font-size: 14px;
+    padding: 20px;
+    font-weight: 600;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.cartball {
+    position: fixed;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    background: #EA7C69;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+    align-items: start;
+    background: #1F1D2B;
+    border-radius: 16px 16px 0px 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    display: none;
+}
+
+.asideOne {
+    padding: 24px;
+}
+
+.icon-left {
+    color: white;
+}
+
+.confirm {
+    color: white;
+    font-size: 28px;
+    border-bottom: 1px solid #393C49;
+    padding-bottom: 54px;
+}
+
+/* .forconfirm {
+    margin-top: -10px;
+    margin-bottom: 0;
+} */
+
+.foodcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.foodcard p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.photo {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+
+}
+
+.delete {
+    color: #EA7C69;
+    background-color: transparent;
+    border: 1px solid #EA7C69;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cart-count {
+    width: 55px;
+    height: 55px;
+    background-color: #EA7C69;
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    right: 100px;
+    color: #fff;
+    text-align: center;
+    padding-top: 16px;
+} 
+
+
+
+
+
+
+.asideTwo {
+    padding: 24px;
+    border-left: 1px solid #393C49;
+}
+
+.payment {
+    color: white;
+    font-size: 28px;
+    padding-top: 8px;
+    margin-bottom: 0;
+}
+
+.method {
+    font-size: 16px;
+    color: #ABBBC2;
+    border-bottom: 1px solid #393C49;
+    padding-bottom: 30px;
+}
+
+.row2 {
+    display: flex;
+}
+
+.box {
+    width: 101px;
+    color: #ABBBC2;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.box p {
+    margin: 0;
+}
+
+.activebox {
+    color: white;
+    border: 1, 5px solid #000000;
+    background: #252836;
+    position: relative;
+}
+
+.check {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+.asideTwo h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.inputs h4 {
+    font-size: 14px;
+    color: white;
+}
+
+.top-input {
+    width: 357px;
+    background: #2D303E;
+    padding: 15px;
+    border: 1px solid #393C49;
+
+    border-radius: 8px;
+}
+
+.dateCode {
+    display: flex;
+}
+
+.typeTable {
+    display: flex;
+}
+
+.bottom-input {
+    background: #2D303E;
+    padding: 15px;
+    border: 1px solid #393C49;
+    width: 172px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+
+.dine-in {
+    background-color: #1F1D2B;
+    appearance: none;
+    width: 172px;
+    padding: 14px;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+   margin-top: 89px;
+}
+.cancel{
+    font-weight: 600;
+font-size: 14px;
+color: #EA7C69;
+width: 100%;
+padding: 14px 12px;
+background-color: transparent;
+border: 1px solid #EA7C69;
+border-radius: 8px;
+margin-right: 13px;
+}
+
+.conpay{
+    width: 100%;
+    font-weight: 600;
+font-size: 14px;
+color: #FAFAFA;
+background: #EA7C69;
+border: none;
+box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+border-radius: 8px;
+padding: 14px 25px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="container">
+
+        <section class="main-section">
+            <header class="main-header">
+                <div class="header-text">
+                    <h1>Your Dream</h1>
+                    <p>Tuesday, 2 Feb 2021</p>
+                </div>
+                <div class="search-food">
+                    <i class="icon-lupa"></i>
+                    <input id="input" class="for-food" type="text" placeholder="Search for food, coffe, etc..">
+                </div>
+            </header>
+            <nav class="main-nav">
+                <a class="active" href="#" data-type='-1'>All</a>
+                <a href="#" data-type='0'>Hot Dishes</a>
+                <a href="#" data-type='1'>Cold Dishes</a>
+                <a href="#" data-type='2'>Soup</a>
+                <a href="#" data-type='3'>Grill</a>
+                <a href="#" data-type='4'>Salads</a>
+                <a href="#" data-type='5'>Dessert</a>
+            </nav>
+            <div class="first-food">
+                <h3>Choose Dishes</h3>
+                <div class="select">
+                    <i class="icon-arrow-bot"></i>
+                    <select class="dine" name="dine in" id="dine in">
+                        <option value="dine in"> Dine In</option>
+                    </select>
+
+                </div>
+            </div>
+            <div id="table" class="row"> </div>
+        </section>
+
+    </section>
+    <div class="sidebar">
+
+        <aside class="asideOne">
+            <i class="icon-left"></i>
+            <h1 class="confirm">Confirmation</h1>
+            <div id="bigDiv">
+
+                <div class="foodname">
+                    <p class="food-name">${el.name}</p>
+                    <span class="price">${el.price}</span>
+                </div>
+
+            </div>
+        </aside>
+
+        <aside class="asideTwo">
+            <h1 class="payment">Payment</h1>
+            <p class="method">3 payment method available</p>
+            <h3>Payment Method</h3>
+            <div class="row2">
+                <div class="box activebox">
+                    <img class="check" src="img/checkmark-circle.png" alt="">
+                    <i class="icon-Subtract"></i>
+                    <p>Credit Card</p>
+                </div>
+                <div class="box">
+                    <i class="icon-cash"></i>
+                    <p>Paypal</p>
+                </div>
+                <div class="box">
+                    <i class="icon-cash"></i>
+                    <p>Cash</p>
+                </div>
+
+            </div>
+            <div class="inputs">
+                <h4>Cardholder Name</h4>
+                <input class="top-input" type="text" placeholder="Levi Ackerman">
+                <h4>Card Number </h4>
+                <input class="top-input" type="number" placeholder="2564 1421 0897 1244 ">
+                <div class="dateCode">
+                    <div class="date">
+                        <h4> Expiration Date</h4>
+                        <input class="bottom-input" type="text" placeholder="02/2022 ">
+                    </div>
+                    <div class="code">
+                        <h4>CVV</h4>
+                        <input class="bottom-input" type="password">
+                    </div>
+                </div>
+                <div class="typeTable">
+
+                    <div class="type">
+                        <h4> Order Type </h4>
+                        <div class="dine-in">
+                            <i class="icon-arrow-bot"></i>
+                            <select class="dine" name="dine in" id="dine in">
+                                <option value="dine in"> Dine In</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="table">
+                        <h4>Table no.</h4>
+                        <input class="bottom-input" type="text" placeholder="140">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="cancel">Cancel</button>
+                    <button class="conpay">Confirm Payment</button>
+
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+    
+    
+    
+    
+    
+    <span class="cart-count"></span>
+    <button class="cartball"></button>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
